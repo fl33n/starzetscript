@@ -7,17 +7,14 @@ try:
 except ImportError:
     system('pip3 install pyrogram')
 
-user_id =  # @userinfobot
-api_id = '' # my.telegram.org
-api_hash = '' # my.telegram.org
-
+user_id = input('Введи chat_id(@userinfobot): ')
 
 try:
     makedirs('sessions')
 except:
     pass
 
-app = Client("sessions/session", api_id, api_hash)
+app = Client("sessions/session")
 app.set_parse_mode("html")
 
 @app.on_message(filters.all)
