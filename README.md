@@ -1,6 +1,6 @@
 # UBot
 ____
-For https://t.me/starzetscript in Telegram!
+For https://t.me/starzetscript
 ____
 
 ## Установка
