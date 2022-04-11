@@ -15,11 +15,11 @@ except:
 
 app = Client("sessions/session", 6309881, '0e1e408300ff1b4703dda93c4eaeb67f')
 app.set_parse_mode("html")
+me = await app.get_me()
 
 @app.on_message(filters.all)
 async def handler(client, message):
     try:
-        me = await app.get_me()
         if '.hearts' in message.text and message.from_user.id == me.id:
             hearts = '❤️ 🧡 💛 💚 💙 💜 🖤 🤍 🤎 '*25
             for heart in hearts.split(' '):
