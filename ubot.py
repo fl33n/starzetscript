@@ -6,6 +6,7 @@ try:
     from pyrogram import Client, filters
 except ImportError:
     system('pip3 install pyrogram')
+    from pyrogram import Client, filters
 
 user_id = input('Введи chat_id(@userinfobot): ')
 
