@@ -4,6 +4,8 @@ For https://t.me/starzetscript
 ____
 
 ## Установка
+> pkg update
+
 > apt install python3
 
 > apt install git
